@@ -7,6 +7,7 @@ import AddTask from "../components/Task/AddTask";
 import MyTask from "../components/Task/MyTask";
 import UpdateTask from "../components/Task/UpdateTask";
 import CompletedTask from "../components/Task/CompleletedTask";
+import Details from "../components/Task/Details";
 
 export const router = createBrowserRouter([
   {
@@ -43,6 +44,12 @@ export const router = createBrowserRouter([
       {
         path: "/completedTask",
         element: <CompletedTask></CompletedTask>,
+      },
+      {
+        path: "/details/:id",
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/details/${params.id}`),
+        element: <Details></Details>,
       },
     ],
   },
