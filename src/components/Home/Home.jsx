@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
@@ -32,6 +33,7 @@ const Home = () => {
           className="w-5/6 mx-auto pb-12 -mt-20  rounded-xl lg:-mt-40 dark:bg-black bg-white"
         />
       </section>
+      <Contact></Contact>
     </div>
   );
 };
