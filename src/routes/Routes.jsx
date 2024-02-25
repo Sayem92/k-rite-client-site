@@ -6,8 +6,9 @@ import Login from "../components/Form/Login";
 import AddTask from "../components/Task/AddTask";
 import MyTask from "../components/Task/MyTask";
 import UpdateTask from "../components/Task/UpdateTask";
-import CompletedTask from "../components/Task/CompleletedTask";
+import CompletedTask from "../components/Task/CompletedTask";
 import Details from "../components/Task/Details";
+import PrivateRoutes from "./PrivateRoutes";
 
 export const router = createBrowserRouter([
   {
@@ -29,7 +30,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "/addTask",
-        element: <AddTask></AddTask>,
+        element: (
+          <PrivateRoutes>
+            <AddTask></AddTask>
+          </PrivateRoutes>
+        ),
       },
       {
         path: "/myTask",
