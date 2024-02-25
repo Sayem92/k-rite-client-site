@@ -5,6 +5,7 @@ import Register from "../components/Form/Register";
 import Login from "../components/Form/Login";
 import AddTask from "../components/Task/AddTask";
 import MyTask from "../components/Task/MyTask";
+import UpdateTask from "../components/Task/UpdateTask";
 
 export const router = createBrowserRouter([
   {
@@ -32,6 +33,11 @@ export const router = createBrowserRouter([
         path: "/myTask",
         element: <MyTask></MyTask>,
       },
+      {
+        path: '/updateTask/:id',
+        loader: ({ params }) => fetch(`http://localhost:5000/updateTask/${params.id}`),
+        element: <UpdateTask></UpdateTask>
+    },
     ],
   },
 ]);
