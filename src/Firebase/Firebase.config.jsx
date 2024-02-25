@@ -14,7 +14,15 @@ import { initializeApp } from "firebase/app";
 
 // };
 
-
+const firebaseConfig = {
+    apiKey: "AIzaSyBIC3tHdqKcmJrhoJE9Pt1wq-074tq01Rg",
+    authDomain: "task-management-b5e67.firebaseapp.com",
+    projectId: "task-management-b5e67",
+    storageBucket: "task-management-b5e67.appspot.com",
+    messagingSenderId: "829767261871",
+    appId: "1:829767261871:web:34fa8e660ee0e327153e5a",
+    measurementId: "G-38305G7H9W",
+  };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
