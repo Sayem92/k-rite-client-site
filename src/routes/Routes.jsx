@@ -9,12 +9,13 @@ import UpdateTask from "../components/Task/UpdateTask";
 import CompletedTask from "../components/Task/CompletedTask";
 import Details from "../components/Task/Details";
 import PrivateRoutes from "./PrivateRoutes";
+import ErrorPage from "../components/ErrorPage/ErrorPage";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
-    // errorElement: <ErrorPage></ErrorPage>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
