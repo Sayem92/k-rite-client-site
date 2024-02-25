@@ -3,6 +3,7 @@ import Main from "../layout/Main";
 import Home from "../components/Home/Home";
 import Register from "../components/Form/Register";
 import Login from "../components/Form/Login";
+import AddTask from "../components/AddTask/AddTask";
 
 export const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ export const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login></Login>,
+      },
+      {
+        path: "/addTask",
+        element: <AddTask></AddTask>,
       },
     ],
   },
