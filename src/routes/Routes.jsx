@@ -44,7 +44,9 @@ export const router = createBrowserRouter([
       {
         path: "/updateTask/:id",
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/updateTask/${params.id}`),
+          fetch(
+            `https://k-rite-server-site.vercel.app/updateTask/${params.id}`
+          ),
         element: <UpdateTask></UpdateTask>,
       },
       {
@@ -54,7 +56,7 @@ export const router = createBrowserRouter([
       {
         path: "/details/:id",
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/details/${params.id}`),
+          fetch(`https://k-rite-server-site.vercel.app/details/${params.id}`),
         element: <Details></Details>,
       },
     ],

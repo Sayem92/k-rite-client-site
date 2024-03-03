@@ -14,7 +14,9 @@ const MyTask = () => {
   } = useQuery({
     queryKey: [""],
     queryFn: async () => {
-      const res = await fetch(`http://localhost:5000/myTask/${user?.email}`);
+      const res = await fetch(
+        `https://k-rite-server-site.vercel.app/myTask/${user?.email}`
+      );
       const data = await res.json();
       return data;
     },
@@ -23,7 +25,7 @@ const MyTask = () => {
   const handleDeletingMyTask = (_id) => {
     const agreed = window.confirm("Are you sure you want to delete");
     if (agreed) {
-      fetch(`http://localhost:5000/myTask/${_id}`, {
+      fetch(`https://k-rite-server-site.vercel.app/myTask/${_id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
