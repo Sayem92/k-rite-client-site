@@ -49,8 +49,8 @@ const Navbar = () => {
       <div className="relative flex items-center justify-between">
         <Link
           to="/"
-          aria-label="To-do List"
-          title="To-do List"
+          aria-label="Task Management"
+          title="Task Management"
           className="inline-flex items-center"
         >
           <span className="ml-2 text-xl font-bold tracking-wide hover:text-black dark:text-green-500 uppercase">
@@ -163,8 +163,8 @@ const Navbar = () => {
                   <div>
                     <Link
                       to="/"
-                      aria-label="To-do List"
-                      title="To-do List"
+                      aria-label="Task Management"
+                      title="Task Management"
                       className="inline-flex items-center"
                     >
                       <span className="ml-2 text-xl font-bold tracking-wide text-green-500 uppercase">

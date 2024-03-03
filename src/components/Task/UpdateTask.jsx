@@ -184,7 +184,7 @@ const UpdateTask = () => {
             onChange={setComplete}
             className="flex justify-between"
           >
-            <RadioGroup.Option value="true" className="my-5">
+            <RadioGroup.Option value="true" className="my-5 cursor-pointer">
               {({ checked }) => (
                 <span
                   className={
@@ -197,7 +197,7 @@ const UpdateTask = () => {
                 </span>
               )}
             </RadioGroup.Option>
-            <RadioGroup.Option value="false" className="my-5">
+            <RadioGroup.Option value="false" className="my-5 cursor-pointer">
               {({ checked }) => (
                 <span
                   className={
